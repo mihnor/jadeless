@@ -1,0 +1,26 @@
+template(name="Home")
+
+    h1. JADE METEOR!
+    +hello
+
+
+template(name="hello")
+    button. Click Me
+    p
+        |You've pressed the button #{counter} times.
+
+template(name="FOOBAR")
+    ion-view
+        ion-slide-box(class="slides")
+            ion-slide
+                ion-scroll
+                    div(class="box blue")
+                        H1 BLUE
+            ion-slide
+                ion-scroll
+                    div(class="box pink")
+                        H1 PINK
+            ion-slide
+                ion-scroll
+                    div(class="box yellow")
+                        H1 YELLOW
