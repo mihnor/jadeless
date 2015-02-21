@@ -4,15 +4,29 @@ template(name="eventos")
         div(class="bar bar-header bar-light")
             h1(class="title") CATRACA EVENTOS
         +ionContent(class="has-header")
-                ion-slide-box(on-slide-changed="slideChanged($index)")
+                ion-slide-box
                     each catraca
                         ion-slide
                             div(class="card")
-                                div(class="item")
+                                div(class="item item-text-wrap")
                                     h4 #{titulo.text}
                                     a(href="#{onde.href}") #{onde.text}
                                 div(class="item item-image")
                                     img(class="avatar-image" src="#{image.src}")
+                                    p
+                                        i(class="icon ion-social-usd")  #{quanto}
+                                    p
+                                        i(class="icon ion-clock")  #{horario}
+                            div(class="item tabs tabs-icon-top positive")
+                                a(class="tab-item" href="#")
+                                    i(class="icon ion-thumbsup")
+                                    | Like
+                                a(class="tab-item" href="#")
+                                    i(class="icon ion-chatbox")
+                                    | Comment
+                                a(class="tab-item" href="#")
+                                    i(class="icon ion-share")
+                                    | Share
         div(class="bar bar-footer")
             button(class="button button-clear") Left
             div(class="title") Title

@@ -1,38 +1,43 @@
 @import '.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic';
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons';
+
 
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 $base: #B8E68A;
 $foo:#FE8B7D;
 
-h1 {
-  color: $foo;
+h4{
+  color: $positive;
 //  background-color: saturate($base, 50%);
+}
+
+a {
+  color: $balanced;
 }
 
 html {
 }
 
 #containter {
-  margin: 30px;
+//  margin: 30px;
 }
 
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
-  background-color: $base;
+//  background-color: $base;
   font: 100% $font-stack;
   color: $primary-color;
 }
 #footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+//  position: absolute;
+//  bottom: 0;
+//  width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
+//  height: 60px;
 
 }
 
 .container .text-muted {
-  margin: 20px 0;
+//  margin: 20px 0;
 }
