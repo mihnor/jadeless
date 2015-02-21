@@ -1,34 +1,27 @@
-<template name="foo">
-
-    <button data-ion-modal="myModal">Open Modal</button>
-
-  {{#myPanel title="Meteoric" type="primary"}}
-      <p>Meteor + Ionic = Meteoric</p>
-  {{/myPanel}}
-
-    <ion-slide-box ng-controller="ExampleController" pager-click="navSlide(index)" auto-play="true" does-continue="true">
-        <ion-slide>
-            <img style="width: 100%" src="http://upload.wikimedia.org/wikipedia/commons/7/79/2001_BMW_Z3_Sideview_Topdown_Topaz_Blue_2.5i.jpg">
-        </ion-slide>
-        <ion-slide>
-            <img style="width: 100%" src="http://upload.wikimedia.org/wikipedia/commons/2/2e/BMW_Z3_1.9L_1998.jpg">
-        </ion-slide>
-        <ion-slide>
-            <img style="width: 100%" src="http://www.bmwblog.com/wp-content/uploads/bmw-z3-black.jpg">
-        </ion-slide>
-    </ion-slide-box>
-
-</template>
-
-
-<template name="myPanel">
+<template name="myTemplateHTML">
     <div class="my-template">
-        Static content here
+      {{> UI.contentBlock}}
     </div>
 </template>
 
-<template name="myModal">
-  {{#ionModal title="My Modal"}}
-      <p>My modal content goes here</p>
-  {{/ionModal}}
+<template name="myPanel">
+    {{> UI.contentBlock}}
 </template>
+
+<template name="foo">
+    {{#ionContent}}
+
+    {{#myPanel title="Meteoric" type="primary"}}
+        <p>Meteor + Ionic = Meteoric</p>
+    {{/myPanel}}
+
+    <h1>Another Template</h1>
+  {{#myTemplateHTML}}
+      Custom Content goes here
+  {{/myTemplateHTML}}
+
+{{/ionContent}}
+
+
+</template>
+

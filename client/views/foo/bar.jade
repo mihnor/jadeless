@@ -1,0 +1,13 @@
+template(name="myTemplate")
+    div(class="my-template")
+        +UI.contentBlock
+
+template(name="bar")
+    +ionContent
+        h1 Another Template
+        +myTemplate
+            | Custom content goes here
+
+
+
+
