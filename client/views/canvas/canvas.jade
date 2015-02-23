@@ -1,0 +1,39 @@
+template(name="canvas")
+    +ionView
+        +contentFor "headerTitle"
+            h1(class="title") Business Model Canvas
+        +ionContent(class="has-header")
+            // Canvas
+            table#bizcanvas(border='3')
+                tr
+                    td(colspan='2', rowspan='2')
+                        h4 Key Partners
+                        p
+                            | more details
+                            a(data-original-title='More details', data-content="And here's some amazing content. It's very engaging. right?", data-placement='bottom', rel='popover', href='#') ...
+                    td(colspan='2')
+                        h4 Key Activities
+                        p ...
+                    td(colspan='2', rowspan='2')
+                        h4 Value Proposition
+                        p ...
+                    td(colspan='2')
+                        h4 Customer Relationship
+                        p ...
+                    td(colspan='2', rowspan='2')
+                        h4 Customer Segments
+                        p ...
+                tr
+                    td(colspan='2')
+                        h4 Key Resources
+                        p ...
+                    td(colspan='2')
+                        h4 Channels
+                        p ...
+                tr
+                    td(colspan='5')
+                        h4 Cost Structure
+                        p ...
+                    td(colspan='5')
+                        h4 Revenue Streams
+                        p ...

@@ -1,4 +1,11 @@
 if (Meteor.isClient) {
+
+    Session.set("Mongol", {
+        'collections': ['Canvas', 'CanvasSimple'],
+        'display': true,
+        'opacity_normal': ".7",
+        'opacity_expand': ".9",
+    });
   // counter starts at 0
   Session.setDefault('counter', 0);
 

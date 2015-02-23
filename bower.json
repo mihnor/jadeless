@@ -1,0 +1,28 @@
+{
+  "name": "jadeless",
+  "version": "0.0.1",
+  "dependencies": {
+
+  },
+  "private": true,
+  "main": "jadeless.js",
+  "homepage": "https://github.com/mihnor/jadeless",
+  "authors": [
+    "Clelio de Paula <clelio@wesense.com.br>"
+  ],
+  "keywords": [
+    "meteor",
+    "jade",
+    "less",
+    "scss"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    ".meteor/local/bower",
+    "test",
+    "tests"
+  ]
+}

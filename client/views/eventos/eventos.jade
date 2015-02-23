@@ -1,33 +1,27 @@
 
 template(name="eventos")
     +ionView
-        div(class="bar bar-header bar-light")
-            h1(class="title") CATRACA EVENTOS
+        +contentFor "headerTitle"
+            h1(class="title") Eventos Catraca Livre
         +ionContent(class="has-header")
-                ion-slide-box
-                    each catraca
-                        ion-slide
-                            div(class="card")
-                                div(class="item item-text-wrap")
-                                    h4 #{titulo.text}
-                                    a(href="#{onde.href}") #{onde.text}
-                                div(class="item item-image")
-                                    img(class="avatar-image" src="#{image.src}")
-                                    p
-                                        i(class="icon ion-social-usd")  #{quanto}
-                                    p
-                                        i(class="icon ion-clock")  #{horario}
-                            div(class="item tabs tabs-icon-top positive")
-                                a(class="tab-item" href="#")
-                                    i(class="icon ion-thumbsup")
-                                    | Like
-                                a(class="tab-item" href="#")
-                                    i(class="icon ion-chatbox")
-                                    | Comment
-                                a(class="tab-item" href="#")
-                                    i(class="icon ion-share")
-                                    | Share
-        div(class="bar bar-footer")
-            button(class="button button-clear") Left
-            div(class="title") Title
-            button(class="button button-clear") Right
+            each catraca
+                div(class="list card")
+                    div(class="item item-text-wrap")
+                        h4 #{titulo.text}
+                        a(href="#{onde.href}") #{onde.text}
+                    div(class="item center")
+                        img(class="col" src="#{image.src}")
+                        p
+                            i(class="icon ion-social-usd")  #{quanto}
+                        p
+                            i(class="icon ion-clock")  #{horario}
+                    div(class="item item-text-wrap tabs tabs-icon-top positive")
+                        a(class="tab-item" href="#")
+                            i(class="icon ion-thumbsup")
+                            | Like
+                        a(class="tab-item" href="#")
+                            i(class="icon ion-chatbox")
+                            | Comment
+                        a(class="tab-item" href="#")
+                            i(class="icon ion-share")
+                            | Share

@@ -1,0 +1,11 @@
+template(name="insertCanvas")
+    +autoForm(collection="CanvasSimple" id="insertCanvas" type="insert")
+        fieldset
+            legend Add a Canvas
+            +afQuickField(name='title')
+            +afQuickField(name='author')
+            +afQuickField(name='field1')
+            +afQuickField(name='field2')
+            +afQuickField(name='field3')
+            +afQuickField(name='field4')
+    button(type="submit" class="btn btn-primary") Insert Canvas

@@ -41,3 +41,38 @@ body {
 .container .text-muted {
 //  margin: 20px 0;
 }
+
+
+BODY {font-family: 'Headland One', serif;}
+
+H1 {font-weight: 900;}
+
+textarea {    border-style: none;
+  border-color: Transparent;
+  overflow: auto;  }
+
+#bizcanvas {
+
+}
+
+#bizcanvas .col {
+  vertical-align: top;
+  text-align: center;
+//  padding: 10px;
+}
+
+
+#bizcanvas H4 {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+#bizcanvas H5 {
+  font-weight: 700;
+  font-size: 0.7em;
+}
+
+#bizcanvas p {
+  font-weight: 300;
+  font-size: 0.8em;
+}

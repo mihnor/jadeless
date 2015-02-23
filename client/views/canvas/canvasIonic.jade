@@ -1,0 +1,41 @@
+template(name="canvasIonic")
+    +ionView
+        +contentFor "headerTitle"
+            h1(class="title") Business Model Canvas
+        +ionContent(class="has-header padding")
+            // Canvas
+            h2 Nome do Projeto
+            div(class="list card" id="bizcanvas")
+                div(class="item item-divider")
+                    h4 Customer Segments
+                div(class="item item-text-wrap")
+                    p lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                +insertCanvas(collection="CanvasSimple" doc=post id="update-CanvasSimple" type="update" buttonContent="Insert Canvas")
+                +quickForm(collection="Canvas" doc=post id="edit-form" type="update" buttonContent="Insert Canvas")
+                div(class="item item-divider")
+                    h4 Value
+                div(class="item item-text-wrap")
+                    textarea(placeholder="Describe yourself with 4 words..." rows="3")
+                div(class="row item")
+                    div(class="col")
+                        h4 Customer Relationship
+                        p ...
+                    div(class="col")
+                        h4 Customer Segments
+                        p ...
+                div(class="row")
+                    td(col-20)
+                        h4 Key Partners
+                        p
+                            | more details
+                            a(data-original-title='More details', data-content="And here's some amazing content. It's very engaging. right?", data-placement='bottom', rel='popover', href='#') ...
+                    td(col-20)
+                        h4 Channels
+                        p ...
+                div(class="row")
+                    td(col-50, rowspan='2')
+                        h4 Cost Structure
+                        p ...
+                    td(col-50, rowspan='2')
+                        h4 Revenue Streams
+                        p ...
